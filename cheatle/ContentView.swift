@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var wordsFromFile = Words()
+//TODO: hoist state of color
+    @State private var words: [[String]] =
+    [
+        ["","","","",""],
+        ["","","","",""],
+        ["","","","",""],
+        ["","","","",""],
+        ["","","","",""],
+        ["","","","",""]
+    ]
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Group {
+                CheatleWord(word: $words[0])
+                CheatleWord(word: $words[1])
+                CheatleWord(word: $words[2])
+                CheatleWord(word: $words[3])
+                CheatleWord(word: $words[4])
+                CheatleWord(word: $words[5])
+            }
+            
+            Spacer()
+            
+            WordsList(words: wordsFromFile)
+        }
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

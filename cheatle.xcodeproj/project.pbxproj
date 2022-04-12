@@ -11,6 +11,10 @@
 		A9FEBB352805243500C54947 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEBB342805243500C54947 /* ContentView.swift */; };
 		A9FEBB372805243D00C54947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FEBB362805243D00C54947 /* Assets.xcassets */; };
 		A9FEBB3A2805243D00C54947 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FEBB392805243D00C54947 /* Preview Assets.xcassets */; };
+		A9FEBB412805251900C54947 /* CheatleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEBB402805251900C54947 /* CheatleBox.swift */; };
+		A9FEBB4328052F8600C54947 /* CheatleWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEBB4228052F8600C54947 /* CheatleWord.swift */; };
+		A9FEBB452805366000C54947 /* english5letterwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9FEBB442805366000C54947 /* english5letterwords.txt */; };
+		A9FEBB472805386B00C54947 /* WordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEBB462805386B00C54947 /* WordsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		A9FEBB342805243500C54947 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9FEBB362805243D00C54947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9FEBB392805243D00C54947 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9FEBB402805251900C54947 /* CheatleBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatleBox.swift; sourceTree = "<group>"; };
+		A9FEBB4228052F8600C54947 /* CheatleWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatleWord.swift; sourceTree = "<group>"; };
+		A9FEBB442805366000C54947 /* english5letterwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english5letterwords.txt; sourceTree = "<group>"; };
+		A9FEBB462805386B00C54947 /* WordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				A9FEBB342805243500C54947 /* ContentView.swift */,
 				A9FEBB362805243D00C54947 /* Assets.xcassets */,
 				A9FEBB382805243D00C54947 /* Preview Content */,
+				A9FEBB402805251900C54947 /* CheatleBox.swift */,
+				A9FEBB4228052F8600C54947 /* CheatleWord.swift */,
+				A9FEBB442805366000C54947 /* english5letterwords.txt */,
+				A9FEBB462805386B00C54947 /* WordsList.swift */,
 			);
 			path = cheatle;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FEBB3A2805243D00C54947 /* Preview Assets.xcassets in Resources */,
+				A9FEBB452805366000C54947 /* english5letterwords.txt in Resources */,
 				A9FEBB372805243D00C54947 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FEBB412805251900C54947 /* CheatleBox.swift in Sources */,
 				A9FEBB352805243500C54947 /* ContentView.swift in Sources */,
+				A9FEBB4328052F8600C54947 /* CheatleWord.swift in Sources */,
 				A9FEBB332805243500C54947 /* cheatleApp.swift in Sources */,
+				A9FEBB472805386B00C54947 /* WordsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
