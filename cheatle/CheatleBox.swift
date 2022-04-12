@@ -28,7 +28,9 @@ struct CheatleBox: View {
     
     var body: some View {
         Button{
-            boxState.next()
+            if (letter.count > 0){
+                boxState.next()
+            }
         } label: {
             ZStack {
                 Rectangle()

@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var wordsFromFile = Words()
 //TODO: hoist state of color
+//TODO: add a loading icon while it loads the word list
     @State private var words: [[String]] =
     [
         ["","","","",""],
