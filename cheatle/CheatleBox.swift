@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct CheatleBox: View {
-    @State private var boxState = BoxColors.white
+    @Binding var boxState: BoxColors
     @Binding var letter: String
     
     
