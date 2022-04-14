@@ -46,12 +46,16 @@ class Words: ObservableObject {
         var newFilteredList = [String]()
         
         var yellowLetters = [String]()
+        var grayLetters = [String]()
         for i in 0 ..< guesses.count {
             //foreach guess
             for j in 0 ..< guesses[i].count {
                 //foreach letter
                 if colors[i][j] == BoxColors.yellow {
                     yellowLetters.append(guesses[i][j])
+                }
+                if colors[i][j] == BoxColors.gray {
+                    grayLetters.append(guesses[i][j])
                 }
             }
         }
@@ -65,6 +69,15 @@ class Words: ObservableObject {
             
             //foreach word break it into a character array
             let characters = word.map(String.init)
+            
+            //check that we don't have any letters that are gray letters
+            for letter in grayLetters {
+                if word.contains(letter) {
+                    continue eachWordLoop
+                }
+            }
+            
+            //check that this word does have all the greens in the right spot and all the yellows in different spots
             for i in 0 ..< guesses.count {
                 //foreach guess
                 for j in 0 ..< guesses[i].count {
@@ -77,15 +90,7 @@ class Words: ObservableObject {
                         //green letters are correct so if they don't match then this is not a good word
                         continue eachWordLoop
                     }//end if green
-                    
-                    if
-                        colors[i][j] == BoxColors.gray &&
-                        characters[j] == guesses[i][j]
-                    {
-                        //gray letters must not match or else this gets kicked out
-                        continue eachWordLoop
-                    }//end if gray
-                    
+                                        
                     if
                         colors[i][j] == BoxColors.yellow &&
                         characters[j] == guesses[i][j]
@@ -94,10 +99,9 @@ class Words: ObservableObject {
                         continue eachWordLoop
                     }//end if yellow
                     
-                    
-                    
                 }//end for letters (j)
             }//end for words (i)
+            
             
             //made it through each of our guesses so lastly check that we do have all the yellow letters in this word
             for letter in yellowLetters {

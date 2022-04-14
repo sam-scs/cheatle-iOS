@@ -38,7 +38,7 @@ struct CheatleBox: View {
                     .frame(width: 40, height: 40)
                     .border(Color.black)
                 TextField("", text: $letter)
-                    .textCase(.uppercase)
+                    .textCase(.lowercase)
                     .frame(width:30, height: 30)
                     .border(Color.black)
                     .onReceive(Just(letter)){_ in limitText()}

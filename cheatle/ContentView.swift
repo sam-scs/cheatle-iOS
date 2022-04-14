@@ -63,6 +63,7 @@ struct ContentView: View {
                         ["","","","",""],
                         ["","","","",""]
                     ]
+                    self.filterWordList()
                 }
             }
             Spacer()
