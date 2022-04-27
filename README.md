@@ -1,5 +1,5 @@
 # cheatle-iOS
-Cheatle app written for JAWAD meetup
+Cheatle app written for JAWAD meetup (presentation link: https://howldesign.com/presentations/cheatle/jawad-cheatle.html)
 
 This is an iOS app that helps you out with Wordle (https://www.nytimes.com/games/wordle/index.html)
 
